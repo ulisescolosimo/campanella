@@ -93,3 +93,47 @@ body {
   letter-spacing: 0;
   text-align: center;
 }
+
+.estadistica-numero {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.09;
+  letter-spacing: 0;
+}
+
+.experiencia-info {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.44;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.experiencia-titulo {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.06;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/* Clase para el texto "Sobre" en "Sobre 100Bares" (peso 400) */
+.sobre-100bares {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.09;
+  letter-spacing: 0;
+}
+
+/* Clase para "100Bares" en "Sobre 100Bares" (peso 700) */
+.sobre-100bares-bold {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.09;
+  letter-spacing: 0;
+}

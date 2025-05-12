@@ -19,7 +19,7 @@ export default function PoliteamaInfo() {
       />
       <div className="relative z-10 w-full">
         {/* Título y descripción */}
-        <div className="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <div>
             <h2 className="text-white text-2xl sm:text-3xl font-bold mb-4">
               ¿Qué es el Círculo Politeama?
@@ -50,13 +50,13 @@ export default function PoliteamaInfo() {
         </div>
 
         {/* Sobre 100Bares */}
-        <div className="pt-16 max-w-6xl w-full mx-auto bg-black/70 rounded-xl mb-16 flex flex-col gap-6">
+        <div className="pt-28 max-w-7xl w-full mx-auto bg-black/70 rounded-xl mb-16 flex flex-col gap-6">
           {/* Primera fila: texto y estadísticas */}
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-start">
             {/* Texto descriptivo */}
             <div className="md:col-span-2">
-              <h3 className="text-white text-2xl font-bold mb-2">
-                Sobre <span className="font-black">100Bares</span>
+              <h3 className="text-white mb-2">
+                <span class="sobre-100bares">Sobre</span> <span class="sobre-100bares-bold">100Bares</span>
               </h3>
               <p className="text-white/80 text-base mb-2">
                 100Bares es la productora fundada por{" "}
@@ -82,7 +82,7 @@ export default function PoliteamaInfo() {
                     maskComposite: "exclude",
                   }}
                 />
-                <span className="relative z-10 text-3xl text-white font-bold">
+                <span className="relative z-10 estadistica-numero text-white">
                   15
                 </span>
                 <span className="relative z-10 text-white/70 text-xs text-center">
@@ -102,7 +102,7 @@ export default function PoliteamaInfo() {
                     maskComposite: "exclude",
                   }}
                 />
-                <span className="relative z-10 text-3xl text-white font-bold">
+                <span className="relative z-10 estadistica-numero text-white">
                   26
                 </span>
                 <span className="relative z-10 text-white/70 text-xs text-center">
@@ -122,7 +122,7 @@ export default function PoliteamaInfo() {
                     maskComposite: "exclude",
                   }}
                 />
-                <span className="relative z-10 text-3xl text-white font-bold">
+                <span className="relative z-10 estadistica-numero text-white">
                   17
                 </span>
                 <span className="relative z-10 text-white/70 text-xs text-center">
@@ -142,7 +142,7 @@ export default function PoliteamaInfo() {
                     maskComposite: "exclude",
                   }}
                 />
-                <span className="relative z-10 text-3xl text-white font-bold">
+                <span className="relative z-10 estadistica-numero text-white">
                   7
                 </span>
                 <span className="relative z-10 text-white/70 text-xs text-center">
@@ -152,43 +152,80 @@ export default function PoliteamaInfo() {
             </div>
           </div>
           {/* Segunda fila: imagen y premios */}
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-start mt-12">
             {/* Imagen de Campanella */}
-            <div className="md:col-span-3 w-full h-56 bg-neutral-800 rounded-lg flex items-center justify-center overflow-hidden">
-              <span className="text-white/40">Imagen de Campanella</span>
+            <div
+              className="md:col-span-3 w-full h-56 rounded-[16px] flex items-center justify-between overflow-hidden relative borde"
+              style={{
+                backgroundImage: "url('/images/campanella.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <img
+                src="/images/100bares.png"
+                alt="100 Bares"
+                className="h-10 ml-8"
+                style={{ filter: "brightness(0) invert(1)" }}
+              />
+              <img
+                src="/images/politeama.png"
+                alt="Politeama"
+                className="h-12 mr-8"
+                style={{ filter: "brightness(0) invert(1)" }}
+              />
             </div>
             {/* Premios */}
             <div className="md:col-span-2 w-full flex flex-col gap-2 justify-center">
-              <h4 className="text-white text-base font-semibold mb-2">
+              <h4 className="text-white text-xs font-semibold mb-2">
                 Entre sus obras más reconocidas están:
               </h4>
               <ul className="text-white/90 text-sm flex flex-col gap-2">
-                <li className="flex items-center gap-2">
-                  <img src="/images/oscar.png" alt="Óscar" className="w-8 h-6 object-contain" />
-                  <span>
-                    <span className="font-bold text-yellow-300">El secreto de sus ojos</span>{" "}
-                    <span className="text-white/60">(2009)</span>
-                    <br />
-                    <span className="text-white/60">Óscar a Mejor película extranjera</span>
-                  </span>
+                <li className="flex gap-3 items-start pb-3 border-b border-white/10">
+                  <img
+                    src="/images/oscar.png"
+                    alt="Óscar"
+                    className="w-8 h-7 mt-1 object-contain"
+                  />
+                  <div>
+                    <span className="font-bold text-yellow-400">
+                      El secreto de sus ojos
+                    </span>
+                    <span className="text-white/60 font-normal"> (2009)</span>
+                    <div className="text-white/60 text-xs">
+                      Óscar a Mejor película extranjera
+                    </div>
+                  </div>
                 </li>
-                <li className="flex items-center gap-2">
-                  <img src="/images/trofeo.png" alt="Goya" className="w-6 h-6 object-contain" />
-                  <span>
-                    <span className="font-bold">Metegol</span>{" "}
-                    <span className="text-white/60">(2013)</span>
-                    <br />
-                    <span className="text-white/60">Goya a mejor película de Animación</span>
-                  </span>
+                <li className="flex gap-3 items-start pb-3 border-b border-white/10">
+                  <img
+                    src="/images/trofeo.png"
+                    alt="Goya"
+                    className="w-8 h-7 mt-1 object-contain"
+                  />
+                  <div>
+                    <span className="font-bold text-white">Metegol</span>
+                    <span className="text-white/60 font-normal"> (2013)</span>
+                    <div className="text-white/60 text-xs">
+                      Goya a mejor película de Animación
+                    </div>
+                  </div>
                 </li>
-                <li className="flex items-center gap-2">
-                  <img src="/images/trofeo.png" alt="Goya" className="w-6 h-6 object-contain" />
-                  <span>
-                    <span className="font-bold">Luna de Avellaneda</span>{" "}
-                    <span className="text-white/60">(2004)</span>
-                    <br />
-                    <span className="text-white/60">Goya a mejor película extranjera</span>
-                  </span>
+                <li className="flex gap-3 items-start">
+                  <img
+                    src="/images/trofeo.png"
+                    alt="Goya"
+                    className="w-8 h-7 mt-1 object-contain"
+                  />
+                  <div>
+                    <span className="font-bold text-white">
+                      Luna de Avellaneda
+                    </span>
+                    <span className="text-white/60 font-normal"> (2004)</span>
+                    <div className="text-white/60 text-xs">
+                      Goya a mejor película extranjera
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -196,54 +233,101 @@ export default function PoliteamaInfo() {
         </div>
 
         {/* Tipos de experiencias */}
-        <div className="max-w-6xl w-full mx-auto mt-12">
-          <h4 className="text-white text-xl font-bold text-center mb-10">
+        <div className="max-w-7xl w-full mx-auto mt-28">
+          <h4 className="experiencia-titulo text-white mb-10">
             ¿Qué tipo de experiencias vas a vivir?
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            {/* Obra de teatro */}
             <div className="flex flex-col items-center">
-              <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4">
-                <span className="text-white/40 text-2xl">🎭</span>
-              </div>
-              <span className="text-white font-semibold mb-2">
-                Obra de teatro
+            <img
+                src="/images/mascaras.png"
+                alt="Creaciones participativas"
+                className="w-16 h-16 object-contain mb-4"
+              />
+              <span className="text-white font-bold text-lg mb-2">
+                Obras de teatro
               </span>
-              <span className="text-white/60 text-xs text-center">
-                Lorem ipsum dolor sit amet.
-              </span>
+              <ul className="experiencia-info w-full text-white/70 flex flex-col gap-1 text-center">
+                <li className="border-b border-white/10 pb-1 mb-1">
+                  Acceso a todas las fechas del programa anual
+                </li>
+                <li className="border-b border-white/10 pb-1 mb-1">
+                  Entradas gratis a espectáculos
+                </li>
+                <li>Lorem ipsum</li>
+              </ul>
             </div>
+            {/* Eventos presenciales */}
             <div className="flex flex-col items-center">
-              <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4">
-                <span className="text-white/40 text-2xl">🎫</span>
-              </div>
-              <span className="text-white font-semibold mb-2">
+            <img
+                src="/images/calendario.png"
+                alt="Creaciones participativas"
+                className="w-16 h-16 object-contain mb-4"
+              />
+              <span className="text-white font-bold text-lg mb-2">
                 Eventos presenciales
               </span>
-              <span className="text-white/60 text-xs text-center">
-                Lorem ipsum dolor sit amet.
-              </span>
+              <ul className="experiencia-info w-full text-white/70 flex flex-col gap-1 text-center">
+                <li className="border-b border-white/10 pb-1 mb-1">
+                  Charlas post-funciones
+                </li>
+                <li className="border-b border-white/10 pb-1 mb-1">
+                  Lorem ipsum
+                </li>
+                <li>Lorem ipsum</li>
+              </ul>
             </div>
+            {/* Formación profesional */}
             <div className="flex flex-col items-center">
-              <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4">
-                <span className="text-white/40 text-2xl">🎓</span>
-              </div>
-              <span className="text-white font-semibold mb-2">
+            <img
+                src="/images/pelicula.png"
+                alt="Creaciones participativas"
+                className="w-16 h-16 object-contain mb-4"
+              />
+              <span className="text-white font-bold text-lg mb-2">
                 Formación profesional
               </span>
-              <span className="text-white/60 text-xs text-center">
-                Lorem ipsum dolor sit amet.
-              </span>
+              <ul className="experiencia-info w-full text-white/70 flex flex-col gap-1 text-center">
+                <li className="border-b border-white/10 pb-1 mb-1">
+                  Masterclass con{" "}
+                  <span className="text-white font-bold">
+                    Campanella y Sacheri
+                  </span>
+                </li>
+                <li className="border-b border-white/10 pb-1 mb-1">
+                  Zooms exclusivos con creadores
+                </li>
+                <li>Programas filmados y encuentros con elencos</li>
+              </ul>
             </div>
+            {/* Creaciones participativas */}
             <div className="flex flex-col items-center">
-              <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4">
-                <span className="text-white/40 text-2xl">🤝</span>
-              </div>
-              <span className="text-white font-semibold mb-2">
+              <img
+                src="/images/grupo.png"
+                alt="Creaciones participativas"
+                className="w-16 h-16 object-contain mb-4"
+              />
+              <span className="text-white font-bold text-lg mb-2">
                 Creaciones participativas
               </span>
-              <span className="text-white/60 text-xs text-center">
-                Lorem ipsum dolor sit amet.
-              </span>
+              <ul className="experiencia-info w-full text-white/70 flex flex-col gap-1 text-center">
+                <li className="border-b border-white/10 pb-1 mb-1">
+                  Acceso a ensayos y etapas de producción
+                </li>
+                <li className="border-b border-white/10 pb-1 mb-1">
+                  Participación en{" "}
+                  <span className="text-white font-bold">
+                    «Domicilio desconocido»
+                  </span>
+                </li>
+                <li>
+                  Participación en{" "}
+                  <span className="text-white font-bold">
+                    «Empieza con D Reloaded»
+                  </span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
