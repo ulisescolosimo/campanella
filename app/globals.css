@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -22,5 +24,72 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter Tight', Arial, Helvetica, sans-serif;
+}
+
+.menu-link {
+  color: #fff;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.44;
+  letter-spacing: 0;
+  transition: text-decoration 0.2s;
+}
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.44;
+  letter-spacing: 0;
+}
+
+.msmadi-script {
+  font-family: 'Ms Madi', cursive;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 1.44;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.hero-categorias {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.09;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+.hero-autor {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.09;
+  letter-spacing: 0;
+}
+
+.hero-detras {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 1.44;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.hero-la {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 1.44;
+  letter-spacing: 0;
+  text-align: center;
 }
