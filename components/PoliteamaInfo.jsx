@@ -55,7 +55,7 @@ export default function PoliteamaInfo() {
         </div>
 
         {/* Sobre 100Bares */}
-        <div className="pt-16 md:pt-32 max-w-7xl w-full mx-auto rounded-xl mb-10 md:mb-20 flex flex-col gap-10 md:gap-20">
+        <div className="pt-16 md:pt-32 max-w-7xl w-full mx-auto rounded-xl mb-10 md:mb-20 flex flex-col gap-10 md:gap-20" id="sobre-100-bares">
           {/* Primera fila: texto y estadísticas */}
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-16 items-start">
             {/* Texto descriptivo */}
@@ -246,6 +246,26 @@ export default function PoliteamaInfo() {
             </div>
           </div>
         </div>
+
+        {/* Placeholder de video */}
+        <div className="w-full flex pt-16 justify-center mb-12 md:mb-18 px-8 md:px-0">
+          <div className="relative w-full max-w-4xl aspect-video rounded-xl overflow-hidden shadow-lg">
+            <img
+              src="/images/video.png"
+              alt="Video placeholder"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="bg-black/60 rounded-full p-4 md:p-6 flex items-center justify-center">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="24" fill="white" fillOpacity="0.85"/>
+                  <polygon points="20,16 34,24 20,32" fill="#A82817" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        {/* Fin placeholder de video */}
 
         {/* Tipos de experiencias */}
         <div className="max-w-7xl w-full mx-auto mt-16 md:mt-28 py-10 md:py-20 px-4 md:px-0">

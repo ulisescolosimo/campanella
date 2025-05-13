@@ -3,7 +3,7 @@ import React from "react";
 export default function MembresiaHero() {
   return (
     <section
-      className="min-h-[60vh] w-full flex items-center justify-center px-4 py-12 md:py-16"
+      className="min-h-[90vh] w-full flex items-center justify-center px-4 py-12 md:py-16"
       style={{
         background:
           "radial-gradient(99.87% 292.01% at 0.69% 0%, #A82817 0%, #FD3422 19.5%, #FD5F4A 37.5%, #D74B39 62.5%, #FD3422 79%, #A82817 100%)",

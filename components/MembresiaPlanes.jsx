@@ -6,7 +6,7 @@ export default function MembresiaPlanes() {
       <div className="max-w-7xl w-full mx-auto px-4 flex flex-col lg:flex-row gap-8 lg:gap-12 items-start pb-12 md:pb-20 pt-12 md:pt-20">
         {/* Texto lateral */}
         <div className="w-full lg:w-auto lg:max-w-[400px]">
-          <h2 className="font-['Inter_Tight'] font-bold text-2xl md:text-[28px] leading-[120%] text-white mb-6">
+          <h2 className="font-['Inter_Tight'] font-bold text-2xl md:text-[28px] leading-[120%] text-white mb-6" id="membresias">
             ¿Qué incluye la membresía?
           </h2>
           <p className="font-['Inter_Tight'] font-normal text-base md:text-lg leading-[140%] text-white">

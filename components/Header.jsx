@@ -19,6 +19,20 @@ export default function Header() {
     };
   }, [isMenuOpen]);
 
+  // Función para scroll con offset
+  const handleAnchorClick = (e, href) => {
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      setIsMenuOpen(false);
+      const target = document.querySelector(href);
+      if (target) {
+        const yOffset = -80; // Offset en píxeles
+        const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <header className="w-full bg-black py-4 relative z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-12 px-4">
@@ -104,23 +118,23 @@ export default function Header() {
           shadow-lg md:shadow-none
         `}>
           <Link 
-            href="#" 
+            href="#sobre-100-bares" 
             className="menu-link text-white hover:text-gray-300 text-xl md:text-base font-medium border-b border-gray-800 md:border-none pb-4 md:pb-0 w-full md:w-auto text-center md:text-left"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={e => handleAnchorClick(e, '#sobre-100-bares')}
           >
             Sobre 100 Bares
           </Link>
           <Link 
-            href="#" 
+            href="#programa" 
             className="menu-link text-white hover:text-gray-300 text-xl md:text-base font-medium border-b border-gray-800 md:border-none pb-4 md:pb-0 w-full md:w-auto text-center md:text-left"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={e => handleAnchorClick(e, '#programa')}
           >
             Programa
           </Link>
           <Link 
-            href="#" 
+            href="#membresias" 
             className="menu-link text-white hover:text-gray-300 text-xl md:text-base font-medium border-b border-gray-800 md:border-none pb-4 md:pb-0 w-full md:w-auto text-center md:text-left"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={e => handleAnchorClick(e, '#membresias')}
           >
             Membresías
           </Link>

@@ -231,6 +231,7 @@ export default function Programa2025() {
             color: 'rgba(255,255,255,1)'
           }}
           className="text-center md:text-left mt-8 mb-18 md:mt-12 md:mb-16"
+          id="programa"
         >
           Programa 2025
         </h2>
