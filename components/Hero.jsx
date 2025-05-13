@@ -28,7 +28,7 @@ export default function Hero() {
                 verticalAlign: 'middle'
               }}>La</span>
               <span className="msmadi-script text-white ml-1" style={{
-                fontFamily: '"Ms Madi", cursive',
+                fontFamily: 'var(--font-ms-madi), cursive',
                 fontSize: '62px',
                 lineHeight: '1.44',
                 letterSpacing: '0px',
@@ -74,7 +74,7 @@ export default function Hero() {
         </div>
 
         <div className="hero-categorias flex flex-wrap justify-center gap-x-4 gap-y-2 text-white opacity-90 mb-8 text-[14px] md:text-[20px] tracking-[0.1em] md:tracking-[0.15em]" style={{
-          fontFamily: 'Inter Tight',
+          fontFamily: 'var(--font-inter-tight), sans-serif',
           fontWeight: 300,
           lineHeight: '109%',
           textAlign: 'center',

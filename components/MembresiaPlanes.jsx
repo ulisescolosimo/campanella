@@ -6,10 +6,10 @@ export default function MembresiaPlanes() {
       <div className="max-w-7xl w-full mx-auto px-4 flex flex-col lg:flex-row gap-8 lg:gap-12 items-start pb-12 md:pb-20 pt-12 md:pt-20">
         {/* Texto lateral */}
         <div className="w-full lg:w-auto lg:max-w-[400px]">
-          <h2 className="font-['Inter_Tight'] font-bold text-2xl md:text-[28px] leading-[120%] text-white mb-6">
+          <h2 className="font-[var(--font-inter-tight)] font-bold text-2xl md:text-[28px] leading-[120%] text-white mb-6">
             ¿Qué incluye la membresía?
           </h2>
-          <p className="font-['Inter_Tight'] font-normal text-base md:text-lg leading-[140%] text-white">
+          <p className="font-[var(--font-inter-tight)] font-normal text-base md:text-lg leading-[140%] text-white">
             Con tu <span className="font-bold">suscripción anual</span> vas a vivir el detrás de escena de nuestras creaciones audiovisuales y teatrales. Accedé a encuentros exclusivos, zooms, ensayos, charlas íntimas y mucho más.
           </p>
         </div>
@@ -18,7 +18,7 @@ export default function MembresiaPlanes() {
         <div className="flex flex-col md:flex-row gap-6 md:gap-8 w-full justify-center">
           {/* Pullman */}
           <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 flex flex-col items-center border border-neutral-200 self-auto">
-            <h3 className="font-['Inter_Tight'] font-bold text-2xl md:text-[28px] leading-[120%] mb-6 text-[#171717]">
+            <h3 className="font-[var(--font-inter-tight)] font-bold text-2xl md:text-[28px] leading-[120%] mb-6 text-[#171717]">
               Socio Pullman
             </h3>
             <ul className="mb-8 w-full flex flex-col gap-3">
@@ -37,28 +37,28 @@ export default function MembresiaPlanes() {
               ))}
             </ul>
             <div className="w-full text-center mb-2">
-              <span className="font-['Inter_Tight'] font-bold text-3xl md:text-[42px] leading-[128%] text-[#171717]">
+              <span className="font-[var(--font-inter-tight)] font-bold text-3xl md:text-[42px] leading-[128%] text-[#171717]">
                 $125.000
               </span>
-              <span className="font-['Inter_Tight'] font-normal text-base md:text-lg leading-[110%] text-[#171717] ml-1">
+              <span className="font-[var(--font-inter-tight)] font-normal text-base md:text-lg leading-[110%] text-[#171717] ml-1">
                 al mes
               </span>
             </div>
             <div className="w-full text-center mb-2">
-              <span className="font-['Inter_Tight'] font-normal text-base md:text-lg leading-[128%] text-neutral-600">
+              <span className="font-[var(--font-inter-tight)] font-normal text-base md:text-lg leading-[128%] text-neutral-600">
                 ó $1.500.000 Anual
               </span>
             </div>
             <div className="w-full text-center mt-6 mb-6 gap-2 flex flex-col">
-              <span className="font-['Inter_Tight'] font-normal text-sm leading-[110%] text-[#A82817] block">
+              <span className="font-[var(--font-inter-tight)] font-normal text-sm leading-[110%] text-[#A82817] block">
                 Valor estimado real: Más de $2.400.000
               </span>
-              <span className="font-['Inter_Tight'] font-normal text-sm leading-[110%] text-[#1DB954] block">
+              <span className="font-[var(--font-inter-tight)] font-normal text-sm leading-[110%] text-[#1DB954] block">
                 Ahorro: +$900.000
               </span>
             </div>
             <button 
-              className="w-full py-3 rounded-lg text-white font-['Inter_Tight'] font-bold text-base md:text-lg transition-transform hover:scale-[1.02] active:scale-[0.98]"
+              className="w-full py-3 rounded-lg text-white font-[var(--font-inter-tight)] font-bold text-base md:text-lg transition-transform hover:scale-[1.02] active:scale-[0.98]"
               style={{background:'linear-gradient(90deg, #A82817 0%, #F9614D 100%)'}}
             >
               Contratar membresía Pullman
@@ -67,7 +67,7 @@ export default function MembresiaPlanes() {
 
           {/* Platea */}
           <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 flex flex-col items-center border border-neutral-200 self-auto">
-            <h3 className="font-['Inter_Tight'] font-bold text-2xl md:text-[28px] leading-[120%] mb-6 text-[#171717]">
+            <h3 className="font-[var(--font-inter-tight)] font-bold text-2xl md:text-[28px] leading-[120%] mb-6 text-[#171717]">
               Socio Platea
             </h3>
             <ul className="mb-8 w-full flex flex-col gap-3">
@@ -88,28 +88,28 @@ export default function MembresiaPlanes() {
               ))}
             </ul>
             <div className="w-full text-center mb-2">
-              <span className="font-['Inter_Tight'] font-bold text-3xl md:text-[42px] leading-[128%] text-[#171717]">
+              <span className="font-[var(--font-inter-tight)] font-bold text-3xl md:text-[42px] leading-[128%] text-[#171717]">
                 $165.000
               </span>
-              <span className="font-['Inter_Tight'] font-normal text-base md:text-lg leading-[110%] text-[#171717] ml-1">
+              <span className="font-[var(--font-inter-tight)] font-normal text-base md:text-lg leading-[110%] text-[#171717] ml-1">
                 al mes
               </span>
             </div>
             <div className="w-full text-center mb-2">
-              <span className="font-['Inter_Tight'] font-normal text-base md:text-lg leading-[128%] text-neutral-600">
+              <span className="font-[var(--font-inter-tight)] font-normal text-base md:text-lg leading-[128%] text-neutral-600">
                 ó $2.000.000 Anual
               </span>
             </div>
             <div className="w-full text-center mt-6 mb-6 gap-2 flex flex-col">
-              <span className="font-['Inter_Tight'] font-normal text-sm leading-[110%] text-[#A82817] block">
+              <span className="font-[var(--font-inter-tight)] font-normal text-sm leading-[110%] text-[#A82817] block">
                 Valor estimado real: Más de $3.200.000
               </span>
-              <span className="font-['Inter_Tight'] font-normal text-sm leading-[110%] text-[#1DB954] block">
+              <span className="font-[var(--font-inter-tight)] font-normal text-sm leading-[110%] text-[#1DB954] block">
                 Ahorro: +$1.200.000
               </span>
             </div>
             <button 
-              className="w-full py-3 rounded-lg text-white font-['Inter_Tight'] font-bold text-base md:text-lg transition-transform hover:scale-[1.02] active:scale-[0.98]"
+              className="w-full py-3 rounded-lg text-white font-[var(--font-inter-tight)] font-bold text-base md:text-lg transition-transform hover:scale-[1.02] active:scale-[0.98]"
               style={{background:'linear-gradient(90deg, #A82817 0%, #F9614D 100%)'}}
             >
               Contratar membresía Platea
