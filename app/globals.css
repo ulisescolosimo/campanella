@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap'); */
 @import "tailwindcss";
 
 :root {
@@ -13,6 +13,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-inter-tight: var(--font-inter-tight);
+  --font-ms-madi: var(--font-ms-madi);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,7 +51,7 @@ body {
 }
 
 .msmadi-script {
-  font-family: 'Ms Madi', cursive;
+  font-family: var(--font-ms-madi), cursive;
   font-weight: 400;
   font-size: 150px;
   line-height: 1.44;

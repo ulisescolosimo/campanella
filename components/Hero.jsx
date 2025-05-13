@@ -27,9 +27,7 @@ export default function Hero() {
                 display: 'inline-block',
                 verticalAlign: 'middle'
               }}>La</span>
-              <span className="msmadi-script text-white ml-1" style={{
-                fontFamily: '"Ms Madi", cursive',
-                fontSize: '62px',
+              <span className="font-ms-madi text-white ml-1 text-[62px] md:text-[150px]" style={{
                 lineHeight: '1.44',
                 letterSpacing: '0px',
                 fontWeight: '400',
@@ -63,7 +61,13 @@ export default function Hero() {
           <h1 className="text-center text-white font-light mb-6" style={{lineHeight: '1.05'}}>
             <span className="inline-flex items-center" style={{marginBottom: '-51px', display: 'inline-flex'}}>
               <span className="hero-la">La</span>
-              <span className="msmadi-script text-white ml-4">experiencia</span>
+              <span className="font-ms-madi text-white ml-4 text-[150px]" style={{
+                lineHeight: '1.44',
+                letterSpacing: '0px',
+                fontWeight: '400',
+                display: 'inline-block',
+                verticalAlign: 'middle'
+              }}>experiencia</span>
             </span>
             <br />
             <span>

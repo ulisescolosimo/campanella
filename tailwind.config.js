@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'inter-tight': ['var(--font-inter-tight)'],
+        'ms-madi': ['var(--font-ms-madi)'],
       },
     },
   },
