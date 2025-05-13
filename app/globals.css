@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 @import "tailwindcss";
 
@@ -136,4 +136,13 @@ body {
   font-size: 36px;
   line-height: 1.09;
   letter-spacing: 0;
+}
+
+/* Oculta la barra de scroll en navegadores modernos */
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
 }

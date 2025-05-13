@@ -1,62 +1,67 @@
 export default function PoliteamaInfo() {
   return (
-    <section className="w-full relative py-20 flex flex-col items-center overflow-hidden">
+    <section className="w-full relative py-10 md:py-20 flex flex-col items-center overflow-hidden" style={{
+      background: `
+        linear-gradient(to bottom, 
+          #000000 0%,
+          rgba(59, 14, 14, 0.3) 50%,
+          rgba(30, 30, 30, 0.2) 100%
+        )
+      `
+    }}>
       {/* Gradiente esquina inferior izquierda */}
       <div
-        className="pointer-events-none absolute left-0 bottom-0 w-96 h-96 z-0"
+        className="pointer-events-none absolute left-0 bottom-0 w-[500px] h-[500px] z-0 opacity-30"
         style={{
-          background:
-            "radial-gradient(circle at left bottom, rgba(168,25,25,0.7) 0%, transparent 70%)",
+          background: "radial-gradient(circle at left bottom, rgba(168,25,25,0.2) 0%, transparent 70%)",
         }}
       />
       {/* Gradiente esquina superior derecha */}
       <div
-        className="pointer-events-none absolute right-0 top-0 w-96 h-96 z-0"
+        className="pointer-events-none absolute right-0 top-0 w-[500px] h-[500px] z-0 opacity-30"
         style={{
-          background:
-            "radial-gradient(circle at right top, rgba(168,25,25,0.5) 0%, transparent 70%)",
+          background: "radial-gradient(circle at right top, rgba(168,25,25,0.15) 0%, transparent 70%)",
+        }}
+      />
+      {/* Gradiente central */}
+      <div
+        className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] z-0 opacity-30"
+        style={{
+          background: "radial-gradient(circle at center, rgba(168,25,25,0.1) 0%, transparent 70%)",
         }}
       />
       <div className="relative z-10 w-full">
         {/* Título y descripción */}
-        <div className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-36 mb-10 md:mb-20 px-4 md:px-0">
           <div>
-            <h2 className="text-white text-2xl sm:text-3xl font-bold mb-4">
+            <h2 className="text-white font-['Inter_Tight'] font-bold text-[18px] leading-[106%] tracking-[0%] text-left md:text-left md:text-2xl sm:md:text-3xl mb-4 md:mb-4">
               ¿Qué es el Círculo Politeama?
             </h2>
-            <p className="text-white/80 text-base mb-6">
-              El Círculo Politeama es una membresía anual creada por{" "}
-              <b>100Bares</b>, producida de <b>Juan José Campanella</b>, para
-              quienes desean ser parte del proceso creativo detrás de las artes
-              escénicas.
+            <p className="text-white/80 text-[15px] leading-[140%] mb-4 md:mb-6 text-left md:text-left">
+              El Círculo Politeama es una membresía anual creada por <b>100Bares</b>, producida de <b>Juan José Campanella</b>, para quienes desean ser parte del proceso creativo detrás de las artes escénicas.
             </p>
-            <p className="text-white/80 text-base">
-              Más allá de los espectáculos, es una invitación a vivir de cerca
-              el trabajo de los artistas y equipos creativos de los elencos más
-              prestigiosos de Argentina.
+            <p className="text-white/80 text-[15px] leading-[140%] mb-4 md:mb-0 text-left md:text-left">
+              Más allá de los espectáculos, es una invitación a vivir de cerca el trabajo de los artistas y equipos creativos de los elencos más prestigiosos de Argentina.
             </p>
           </div>
           <div className="flex flex-col justify-center">
-            <p className="text-white/80 text-base mb-6">
-              Formar parte del Círculo es entrar a una comunidad exclusiva, con
-              acceso a experiencias únicas y contenido especial sobre el proceso
-              creativo de los montajes.
+            <p className="text-white/80 text-[15px] leading-[140%] mb-4 md:mb-6 text-left md:text-left">
+              Formar parte del Círculo es entrar a una comunidad exclusiva, con acceso a experiencias únicas y contenido especial sobre el proceso creativo de los montajes.
             </p>
-            <p className="text-white text-lg font-bold">
-              Lo que ves en el escenario es solo una parte. Nosotros te
-              mostramos todo lo demás.
+            <p className="text-white text-base md:text-lg font-bold text-left md:text-left">
+              Lo que ves en el escenario es solo una parte. Nosotros te mostramos todo lo demás.
             </p>
           </div>
         </div>
 
         {/* Sobre 100Bares */}
-        <div className="pt-28 max-w-7xl w-full mx-auto bg-black/70 rounded-xl mb-16 flex flex-col gap-6">
+        <div className="pt-16 md:pt-32 max-w-7xl w-full mx-auto rounded-xl mb-10 md:mb-20 flex flex-col gap-10 md:gap-20">
           {/* Primera fila: texto y estadísticas */}
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-16 items-start">
             {/* Texto descriptivo */}
-            <div className="md:col-span-2">
-              <h3 className="text-white mb-2">
-                <span class="sobre-100bares">Sobre</span> <span class="sobre-100bares-bold">100Bares</span>
+            <div className="md:col-span-2 px-4 md:px-0">
+              <h3 className="text-white mb-2 font-['Inter_Tight'] font-bold text-[18px] leading-[106%] tracking-[0%] md:text-base md:font-normal md:leading-normal md:tracking-normal">
+                 <span className="font-['Inter_Tight'] font-bold text-[18px] leading-[106%] tracking-[0%]">Sobre</span> <span className="font-['Inter_Tight'] font-extrabold text-[18px] leading-[106%] tracking-[0%]">100Bares</span>
               </h3>
               <p className="text-white/80 text-base mb-2">
                 100Bares es la productora fundada por{" "}
@@ -68,8 +73,8 @@ export default function PoliteamaInfo() {
               </p>
             </div>
             {/* Estadísticas */}
-            <div className="md:col-span-3 grid grid-cols-2 sm:grid-cols-4 gap-4">
-              <div className="relative bg-black/40 rounded-[16px] flex flex-col items-center justify-center overflow-hidden aspect-square min-w-[90px] min-h-[90px]">
+            <div className="md:col-span-3 grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4 px-4 md:px-0">
+              <div className="relative rounded-[16px] flex flex-col items-center justify-center overflow-hidden aspect-square min-w-[90px] min-h-[90px]">
                 <span
                   className="absolute inset-0 z-0 pointer-events-none rounded-[16px]"
                   style={{
@@ -152,79 +157,89 @@ export default function PoliteamaInfo() {
             </div>
           </div>
           {/* Segunda fila: imagen y premios */}
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-start mt-12">
-            {/* Imagen de Campanella */}
-            <div
-              className="md:col-span-3 w-full h-56 rounded-[16px] flex items-center justify-between overflow-hidden relative borde"
-              style={{
-                backgroundImage: "url('/images/campanella.png')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
+          {/* SOLO MOBILE: Bloque compacto con foto y obras reconocidas */}
+          <div className="md:hidden w-full flex flex-col items-center">
+            <div className="relative left-1/2 right-1/2 -translate-x-1/2 w-screen">
               <img
-                src="/images/100bares.png"
-                alt="100 Bares"
-                className="h-10 ml-8"
-                style={{ filter: "brightness(0) invert(1)" }}
-              />
-              <img
-                src="/images/politeama.png"
-                alt="Politeama"
-                className="h-12 mr-8"
-                style={{ filter: "brightness(0) invert(1)" }}
+                src="/images/campanella.png"
+                alt="Juan José Campanella"
+                className="w-screen max-w-none h-[180px] object-cover object-top rounded-t-xl md:border-2 md:border-[linear-gradient(98.35deg,#3F3F3F_2.51%,#4C3C3C_100%)] md:shadow-[0px_4px_15px_0px_rgba(0,0,0,0.57)]"
               />
             </div>
+            <div className="w-full flex justify-center">
+              <div className="px-4 py-5 w-full max-w-[420px]">
+                <h4 className="text-white text-sm font-semibold mb-6 text-center mt-4">Entre sus obras más reconocidas están:</h4>
+                <ul className="flex flex-col gap-4 mx-auto">
+                  <li className="flex gap-3 items-center">
+                    <img src="/images/oscar.png" alt="Óscar" className="w-8 h-8 object-contain" />
+                    <div className="flex flex-col items-start text-left">
+                      <div>
+                        <span className="font-bold text-yellow-400 text-base">El secreto de sus ojos</span>
+                        <span className="text-white/60 text-sm"> (2009)</span>
+                      </div>
+                      <div className="text-white/80 text-xs">Oscar a Mejor película extranjera</div>
+                    </div>
+                  </li>
+                  <li className="flex gap-3 items-center border-t border-white/10 pt-4">
+                    <img src="/images/trofeo.png" alt="Goya" className="w-8 h-8 object-contain" />
+                    <div className="flex flex-col items-start text-left">
+                      <div>
+                        <span className="font-bold text-white text-base">Metegol</span>
+                        <span className="text-white/60 text-sm"> (2013)</span>
+                      </div>
+                      <div className="text-white/80 text-xs">Goya a mejor película de Animación</div>
+                    </div>
+                  </li>
+                  <li className="flex gap-3 items-center border-t border-white/10 pt-4">
+                    <img src="/images/trofeo.png" alt="Goya" className="w-8 h-8 object-contain" />
+                    <div className="flex flex-col items-start text-left">
+                      <div>
+                        <span className="font-bold text-white text-base">Luna de Avellaneda</span>
+                        <span className="text-white/60 text-sm"> (2004)</span>
+                      </div>
+                      <div className="text-white/80 text-xs">Goya a mejor película extranjera</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          {/* DESKTOP: Sección original */}
+          <div className="hidden md:grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 items-stretch mt-8 md:mt-12 px-4 md:px-0">
+            {/* Imagen de Campanella */}
+            <img
+              src="/images/campanella.png"
+              alt="Juan José Campanella"
+              className="md:col-span-3 w-full h-[200px] md:h-[300px] object-cover rounded-[16px] border-2 border-[linear-gradient(98.35deg,#3F3F3F_2.51%,#4C3C3C_100%)] shadow-[0px_4px_15px_0px_rgba(0,0,0,0.57)]"
+            />
             {/* Premios */}
-            <div className="md:col-span-2 w-full flex flex-col gap-2 justify-center">
-              <h4 className="text-white text-xs font-semibold mb-2">
+            <div className="md:col-span-2 w-full flex flex-col gap-2 justify-center h-auto md:h-[300px]">
+              <h4 className="font-['Inter_Tight'] font-bold text-[16px] md:text-[18px] leading-[158%] tracking-[0%] text-white mb-2">
                 Entre sus obras más reconocidas están:
               </h4>
               <ul className="text-white/90 text-sm flex flex-col gap-2">
-                <li className="flex gap-3 items-start pb-3 border-b border-white/10">
-                  <img
-                    src="/images/oscar.png"
-                    alt="Óscar"
-                    className="w-8 h-7 mt-1 object-contain"
-                  />
+                <li className="flex gap-2 md:gap-3 items-start pb-3 border-b border-white/10">
+                  <img src="/images/oscar.png" alt="Óscar" className="w-6 h-5 md:w-10 md:h-10 mt-1 object-contain" />
                   <div>
-                    <span className="font-bold text-yellow-400">
-                      El secreto de sus ojos
-                    </span>
-                    <span className="text-white/60 font-normal"> (2009)</span>
-                    <div className="text-white/60 text-xs">
-                      Óscar a Mejor película extranjera
-                    </div>
+                    <span className="font-['Inter_Tight'] font-extrabold text-[16px] md:text-[18px] leading-[158%] tracking-[0%] text-white inline-block">El secreto de sus ojos</span>
+                    <span className="font-['Inter_Tight'] font-normal text-[16px] md:text-[18px] leading-[158%] tracking-[0%] text-white/60"> (2009)</span>
+                    <div className="font-['Inter_Tight'] font-normal text-[14px] md:text-[18px] leading-[158%] tracking-[0%] text-white/60">Óscar a Mejor película extranjera</div>
                   </div>
                 </li>
-                <li className="flex gap-3 items-start pb-3 border-b border-white/10">
-                  <img
-                    src="/images/trofeo.png"
-                    alt="Goya"
-                    className="w-8 h-7 mt-1 object-contain"
-                  />
+                <li className="flex gap-2 md:gap-3 items-start pb-3 border-b border-white/10">
+                  <img src="/images/trofeo.png" alt="Goya" className="w-6 h-5 md:w-10 md:h-10 mt-1 object-contain" />
                   <div>
-                    <span className="font-bold text-white">Metegol</span>
-                    <span className="text-white/60 font-normal"> (2013)</span>
-                    <div className="text-white/60 text-xs">
-                      Goya a mejor película de Animación
-                    </div>
+                    <span className="font-['Inter_Tight'] font-extrabold text-[16px] md:text-[18px] leading-[158%] tracking-[0%] text-white inline-block">Metegol</span>
+                    <span className="font-['Inter_Tight'] font-normal text-[16px] md:text-[18px] leading-[158%] tracking-[0%] text-white/60"> (2013)</span>
+                    <div className="font-['Inter_Tight'] font-normal text-[14px] md:text-[18px] leading-[158%] tracking-[0%] text-white/60">Goya a mejor película de Animación</div>
                   </div>
                 </li>
-                <li className="flex gap-3 items-start">
-                  <img
-                    src="/images/trofeo.png"
-                    alt="Goya"
-                    className="w-8 h-7 mt-1 object-contain"
-                  />
+                <li className="flex gap-2 md:gap-3 items-start">
+                  <img src="/images/trofeo.png" alt="Goya" className="w-6 h-5 md:w-10 md:h-10 mt-1 object-contain" />
                   <div>
-                    <span className="font-bold text-white">
-                      Luna de Avellaneda
-                    </span>
-                    <span className="text-white/60 font-normal"> (2004)</span>
-                    <div className="text-white/60 text-xs">
-                      Goya a mejor película extranjera
-                    </div>
+                    <span className="font-['Inter_Tight'] font-extrabold text-[16px] md:text-[18px] leading-[158%] tracking-[0%] text-white inline-block">Luna de Avellaneda</span>
+                    <span className="font-['Inter_Tight'] font-normal text-[16px] md:text-[18px] leading-[158%] tracking-[0%] text-white/60"> (2004)</span>
+                    <div className="font-['Inter_Tight'] font-normal text-[14px] md:text-[18px] leading-[158%] tracking-[0%] text-white/60">Goya a mejor película extranjera</div>
                   </div>
                 </li>
               </ul>
@@ -233,22 +248,24 @@ export default function PoliteamaInfo() {
         </div>
 
         {/* Tipos de experiencias */}
-        <div className="max-w-7xl w-full mx-auto mt-28">
-          <h4 className="experiencia-titulo text-white mb-10">
+        <div className="max-w-7xl w-full mx-auto mt-16 md:mt-28 py-10 md:py-20 px-4 md:px-0">
+          <h4
+            className="text-white mb-8 md:mb-16 text-center md:text-left font-['Inter_Tight'] font-bold text-[18px] leading-[106%] tracking-[0%] md:text-[24px] md:leading-[124%]"
+          >
             ¿Qué tipo de experiencias vas a vivir?
           </h4>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {/* Obra de teatro */}
-            <div className="flex flex-col items-center">
-            <img
+            <div className="flex flex-col items-center py-6 md:py-10">
+              <img
                 src="/images/mascaras.png"
                 alt="Creaciones participativas"
-                className="w-16 h-16 object-contain mb-4"
+                className="w-16 h-16 md:w-20 md:h-20 object-contain mb-3 md:mb-4"
               />
-              <span className="text-white font-bold text-lg mb-2">
+              <span className="text-white font-semibold text-[20px] md:text-[24px] leading-[124%] tracking-[0%] text-center font-['Inter_Tight'] mb-4 md:mb-6">
                 Obras de teatro
               </span>
-              <ul className="experiencia-info w-full text-white/70 flex flex-col gap-1 text-center">
+              <ul className="experiencia-info w-full text-white/70 flex flex-col gap-1 text-center font-['Inter_Tight'] font-light text-[14px] leading-[144%] tracking-[0%]">
                 <li className="border-b border-white/10 pb-1 mb-1">
                   Acceso a todas las fechas del programa anual
                 </li>
@@ -259,16 +276,16 @@ export default function PoliteamaInfo() {
               </ul>
             </div>
             {/* Eventos presenciales */}
-            <div className="flex flex-col items-center">
-            <img
+            <div className="flex flex-col items-center py-6 md:py-10">
+              <img
                 src="/images/calendario.png"
                 alt="Creaciones participativas"
-                className="w-16 h-16 object-contain mb-4"
+                className="w-16 h-16 md:w-20 md:h-20 object-contain mb-3 md:mb-4"
               />
-              <span className="text-white font-bold text-lg mb-2">
+              <span className="text-white font-semibold text-[20px] md:text-[24px] leading-[124%] tracking-[0%] text-center font-['Inter_Tight'] mb-4 md:mb-6">
                 Eventos presenciales
               </span>
-              <ul className="experiencia-info w-full text-white/70 flex flex-col gap-1 text-center">
+              <ul className="experiencia-info w-full text-white/70 flex flex-col gap-1 text-center font-['Inter_Tight'] font-light text-[14px] leading-[144%] tracking-[0%]">
                 <li className="border-b border-white/10 pb-1 mb-1">
                   Charlas post-funciones
                 </li>
@@ -279,16 +296,16 @@ export default function PoliteamaInfo() {
               </ul>
             </div>
             {/* Formación profesional */}
-            <div className="flex flex-col items-center">
-            <img
+            <div className="flex flex-col items-center py-6 md:py-10">
+              <img
                 src="/images/pelicula.png"
                 alt="Creaciones participativas"
-                className="w-16 h-16 object-contain mb-4"
+                className="w-16 h-16 md:w-20 md:h-20 object-contain mb-3 md:mb-4"
               />
-              <span className="text-white font-bold text-lg mb-2">
+              <span className="text-white font-semibold text-[20px] md:text-[24px] leading-[124%] tracking-[0%] text-center font-['Inter_Tight'] mb-4 md:mb-6">
                 Formación profesional
               </span>
-              <ul className="experiencia-info w-full text-white/70 flex flex-col gap-1 text-center">
+              <ul className="experiencia-info w-full text-white/70 flex flex-col gap-1 text-center font-['Inter_Tight'] font-light text-[14px] leading-[144%] tracking-[0%]">
                 <li className="border-b border-white/10 pb-1 mb-1">
                   Masterclass con{" "}
                   <span className="text-white font-bold">
@@ -302,16 +319,16 @@ export default function PoliteamaInfo() {
               </ul>
             </div>
             {/* Creaciones participativas */}
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center py-6 md:py-10">
               <img
                 src="/images/grupo.png"
                 alt="Creaciones participativas"
-                className="w-16 h-16 object-contain mb-4"
+                className="w-16 h-16 md:w-20 md:h-20 object-contain mb-3 md:mb-4"
               />
-              <span className="text-white font-bold text-lg mb-2">
+              <span className="text-white font-semibold text-[20px] md:text-[24px] leading-[124%] tracking-[0%] text-center font-['Inter_Tight'] mb-4 md:mb-6">
                 Creaciones participativas
               </span>
-              <ul className="experiencia-info w-full text-white/70 flex flex-col gap-1 text-center">
+              <ul className="experiencia-info w-full text-white/70 flex flex-col gap-1 text-center font-['Inter_Tight'] font-light text-[14px] leading-[144%] tracking-[0%]">
                 <li className="border-b border-white/10 pb-1 mb-1">
                   Acceso a ensayos y etapas de producción
                 </li>
