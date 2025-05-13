@@ -241,8 +241,8 @@ export default function Programa2025() {
                 className="flex items-center justify-between mb-2 px-1 border-t border-b py-4"
                 style={{ borderColor: "rgba(109, 109, 109, 1)" }}
               >
-                <div className="flex items-center gap-4">
-                  <img src={cat.icono} alt={cat.titulo} className="w-8 h-8 object-contain" />
+                <div className="flex items-center gap-2 md:gap-4">
+                  <img src={cat.icono} alt={cat.titulo} className="w-6 h-6 md:w-8 md:h-8 object-contain" />
                   <span
                     style={{
                       fontFamily: 'Inter Tight',
@@ -250,14 +250,14 @@ export default function Programa2025() {
                       letterSpacing: 0,
                       color: 'rgba(255,255,255,1)'
                     }}
-                    className="text-lg md:text-2xl leading-[124%]"
+                    className="text-base md:text-2xl leading-[124%] whitespace-normal md:whitespace-nowrap"
                   >
                     {cat.titulo}
                   </span>
                 </div>
                 {cat.verMas && (
                   <button
-                    className="flex items-center gap-1 hover:underline text-base md:text-2xl leading-[124%]"
+                    className="flex items-center gap-1 hover:underline text-sm md:text-2xl leading-[124%] flex-shrink-0 ml-2"
                     style={{
                       fontFamily: 'Inter Tight',
                       fontWeight: 600,
@@ -265,7 +265,7 @@ export default function Programa2025() {
                       color: 'rgba(255,255,255,1)'
                     }}
                   >
-                    Ver más <FiChevronRight className="text-lg md:text-2xl" />
+                    Ver más <FiChevronRight className="text-base md:text-2xl" />
                   </button>
                 )}
               </div>
