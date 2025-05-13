@@ -11,7 +11,7 @@ export default function MembresiaHero() {
     >
       <div className="flex flex-col items-center justify-center w-full max-w-4xl mx-auto">
         <h1
-          className="font-[var(--font-inter-tight)] font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-[56px] leading-[128%] text-white text-center mb-2 md:mb-3"
+          className="font-['Inter_Tight'] font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-[56px] leading-[128%] text-white text-center mb-2 md:mb-3"
         >
           Reservá tu butaca{" "}
           <span role="img" aria-label="claqueta" className="inline-block">
@@ -21,7 +21,7 @@ export default function MembresiaHero() {
           <span className="block sm:inline">Viví el Politeama desde adentro.</span>
         </h1>
         <p
-          className="font-[var(--font-inter-tight)] font-normal text-base sm:text-lg md:text-xl lg:text-2xl leading-[144%] text-white text-opacity-90 text-center mb-6 md:mb-8 max-w-2xl"
+          className="font-['Inter_Tight'] font-normal text-base sm:text-lg md:text-xl lg:text-2xl leading-[144%] text-white text-opacity-90 text-center mb-6 md:mb-8 max-w-2xl"
         >
           Sumate hoy al Círculo Politeama y sé
           <br className="hidden sm:block" />
@@ -30,7 +30,7 @@ export default function MembresiaHero() {
         <button
           className="
             bg-white text-[#171717] 
-            font-[var(--font-inter-tight)] font-bold 
+            font-['Inter_Tight'] font-bold 
             text-base sm:text-lg md:text-xl 
             leading-[144%] 
             rounded-lg 

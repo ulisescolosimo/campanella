@@ -24,12 +24,12 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter-tight), Arial, Helvetica, sans-serif;
+  font-family: 'Inter Tight', Arial, Helvetica, sans-serif;
 }
 
 .menu-link {
   color: #fff;
-  font-family: var(--font-inter-tight), sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.44;
@@ -49,7 +49,7 @@ body {
 }
 
 .msmadi-script {
-  font-family: var(--font-ms-madi), cursive;
+  font-family: 'Ms Madi', cursive;
   font-weight: 400;
   font-size: 150px;
   line-height: 1.44;
@@ -60,7 +60,7 @@ body {
 }
 
 .hero-categorias {
-  font-family: var(--font-inter-tight), sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.09;
