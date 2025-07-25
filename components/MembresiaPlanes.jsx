@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MembresiaPlanes() {
   return (
-    <section className="w-full py-12 md:py-20 flex flex-col items-center bg-gradient-to-br from-black via-black to-[#A82817]">
+    <section className="w-full py-12 flex flex-col items-center bg-gradient-to-br from-black via-black to-[#A82817]">
       <div className="max-w-7xl w-full mx-auto flex flex-col lg:flex-row gap-8 lg:gap-12 items-start pb-12 md:pb-20 pt-12 md:pt-20">
         {/* Texto lateral */}
         <div className="w-full lg:w-auto lg:max-w-[400px]">

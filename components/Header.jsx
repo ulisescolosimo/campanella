@@ -26,7 +26,7 @@ export default function Header() {
       setIsMenuOpen(false);
       const target = document.querySelector(href);
       if (target) {
-        const yOffset = -80; // Offset en píxeles
+        const yOffset = -100; // Offset en píxeles para header fijo
         const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
@@ -34,7 +34,7 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full bg-black py-4 relative z-50">
+    <header className="w-full bg-black py-4 fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-12 px-4">
         {/* Logos a la izquierda */}
         <div className="flex items-center space-x-6">

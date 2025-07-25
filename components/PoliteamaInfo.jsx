@@ -5,12 +5,6 @@ export default function PoliteamaInfo() {
   return (
     <section className="w-full relative py-10 md:py-20 flex flex-col items-center overflow-hidden bg-black">
       <div
-        className="pointer-events-none absolute left-0 bottom-0 w-[500px] h-[500px] z-0 opacity-30"
-        style={{
-          background: "radial-gradient(circle at left bottom, rgba(168,25,25,0.2) 0%, transparent 70%)",
-        }}
-      />
-      <div
         className="pointer-events-none absolute right-0 top-0 w-[500px] h-[500px] z-0 opacity-30"
         style={{
           background: "radial-gradient(circle at right top, rgba(168,25,25,0.15) 0%, transparent 70%)",
@@ -25,7 +19,7 @@ export default function PoliteamaInfo() {
       <div className="relative z-10 w-full">
         <div className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-36 mb-10 md:mb-20 px-4 md:px-0">
           <div className="w-fit">
-            <h2 className="text-white font-inter-tight font-bold text-[18px] leading-[106%] tracking-[0%] text-left md:text-left md:text-2xl sm:md:text-3xl mb-4 md:mb-4">
+            <h2 id="sobre-100-bares" className="text-white font-inter-tight font-bold text-[18px] leading-[106%] tracking-[0%] text-left md:text-left md:text-2xl sm:md:text-3xl mb-4 md:mb-4">
               Qué es el Círculo Politeama
             </h2>
             <p className="text-white/80 text-[15px] leading-[140%] mb-4 md:mb-6 text-left md:text-left">
@@ -69,7 +63,7 @@ export default function PoliteamaInfo() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <div className=" rounded-xl">
               <h2 className="text-white font-inter-tight font-bold text-[40px] leading-[106%] tracking-[0%] mb-4">
-                Sumergite en el mundo del cine y el teatro
+                Sumergite en el mundo <br></br> del cine y el teatro
               </h2>
               <p className="text-white/80 font-inter-tight font-normal text-[18px] leading-[144%] tracking-[0%]">
                 Te invitamos a la cocina creativa de todos nuestros proyectos. Una forma de trabajo, una poética, una disciplina, una pasión. Inspirate, nutrí tu vida y tu actividad de esos elementos que te emocionan en la pantalla y el escenario.
@@ -760,7 +754,7 @@ export default function PoliteamaInfo() {
         </div>
 
         {/* Nueva sección debajo de productos */}
-        <div className="w-full bg-black py-16 md:py-32">
+        <div className="w-full bg-black py-16 md:py-16">
           <div className="max-w-7xl w-full mx-auto flex flex-col gap-10 md:gap-10">
             {/* Primer div horizontal */}
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-16 items-start">
