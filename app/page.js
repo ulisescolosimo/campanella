@@ -10,7 +10,6 @@ export default function Home() {
     <>
       <Hero />
       <PoliteamaInfo />
-      <Programa2025 />
       <MembresiaPlanes />
       <MembresiaHero />
     </>
