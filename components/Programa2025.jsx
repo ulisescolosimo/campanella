@@ -233,7 +233,7 @@ export default function Programa2025() {
           className="text-center md:text-left mt-8 mb-18 md:mt-12 md:mb-16"
           id="programa"
         >
-          Programa 2025
+          Programa 2026
         </h2>
         <div className="flex flex-col gap-10">
           {categorias.map((cat, idx) => (

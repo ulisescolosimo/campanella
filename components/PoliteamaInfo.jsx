@@ -172,7 +172,7 @@ export default function PoliteamaInfo() {
         </div>
         </div>
 
-        {/* Programa 2025 */}
+        {/* Programa 2026 */}
         <div className="w-full py-16 flex flex-col items-center min-h-[80vh] relative">
           {/* Fondo con imagen */}
           <div className="absolute inset-0 z-0">
@@ -197,7 +197,7 @@ export default function PoliteamaInfo() {
               className="text-center md:text-left mt-8 mb-6 md:mt-12 md:mb-8"
               id="programa"
             >
-              Programa 2025
+              Programa 2026
             </h2>
             <p 
               className="text-white/80 text-center md:text-left mb-12 md:mb-16 mx-auto md:mx-0"
@@ -241,7 +241,7 @@ export default function PoliteamaInfo() {
                   ],
                 },
                 {
-                  titulo: "Formación profesional",
+                  titulo: "Encuentros de creatividad",
                   icono: "/images/icon/cinta.png",
                   verMas: true,
                   cards: [
@@ -303,13 +303,13 @@ export default function PoliteamaInfo() {
                     },
                     {
                       titulo: "Empieza con D Reloaded",
-                      descripcion: "Te invitamos a una función muy especial. Donde los actores darán una charla abierta al final y con muchas sorpresas en el escenario.",
+                      descripcion: "Una función muy especial. Donde los actores harán una escena que construirás con nosotros a lo largo del año. Verás tu creación en vivo!	",
                       imagen: "/images/creaciones/11.png",
                       badge: "Noviembre",
                     },
                     {
                       titulo: "Acceso a ensayos y producción",
-                      descripcion: "Lorem Ipsum dolot sit amet. Lorem Ipsum dolot sit amet. Lorem Ipsum dolot sit amet.",
+                      descripcion: "A lo largo de año estaremos en contacto permanente para contarte y mostrarte como desarrollamos nuestros próximos proyectos. Acceso exclusivo a nuestro proceso creativo.",
                       imagen: "/images/creaciones/12.png",
                       badge: null,
                     },
