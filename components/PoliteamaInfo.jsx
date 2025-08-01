@@ -328,11 +328,9 @@ export default function PoliteamaInfo() {
                         }}
                       >
                         {/* Sección superior - Ilustración */}
-                        <div className="relative h-[250px] flex items-center justify-center">
                           {card.imagen && (
-                            <img src={card.imagen} alt={card.titulo} className="object-cover w-full h-full" />
+                            <img src={card.imagen} alt={card.titulo} className="object-cover w-full h-[300px]" />
                           )}
-                        </div>
                         
                         {/* Sección inferior - Contenido de texto */}
                         <div className="bg-black p-4 flex-1 flex flex-col">
