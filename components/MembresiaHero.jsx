@@ -20,30 +20,50 @@ export default function MembresiaHero() {
           <br className="hidden sm:block" />
           <span className="block sm:inline">Viví el Politeama desde adentro.</span>
         </h1>
-        <p
-          className="font-['Inter_Tight'] font-normal text-base sm:text-lg md:text-xl lg:text-2xl leading-[144%] text-white text-opacity-90 text-center mb-6 md:mb-8 max-w-2xl"
-        >
-          Sumate hoy al Círculo Politeama y sé
-          <br className="hidden sm:block" />
-          <span className="block sm:inline">parte de nuestra cocina creativa.</span>
-        </p>
-        <button
-          className="
-            bg-white text-[#171717] 
-            font-['Inter_Tight'] font-bold 
-            text-base sm:text-lg md:text-xl 
-            leading-[144%] 
-            rounded-lg 
-            px-6 sm:px-8 md:px-10 
-            py-3 md:py-4 
-            shadow-sm hover:bg-opacity-90 
-            transition-all duration-200 
-            transform hover:scale-[1.02] 
-            active:scale-[0.98]
-          "
-        >
-          QUIERO MI MEMBRESÍA
-        </button>
+        
+        {/* Formulario */}
+        <div className="w-full max-w-4xl mt-8 md:mt-12">
+          <div className="rounded-2xl shadow-lg p-6 md:p-8" style={{background: 'linear-gradient(164.76deg, #6E6E6E 1.42%, #000000 99.61%)'}}>
+            <div className="flex flex-col lg:flex-row gap-8">
+              {/* Lado izquierdo - Texto */}
+              <div className="lg:w-1/2">
+                <h2 className="font-['Inter_Tight'] font-bold text-[32px] leading-[106%] text-white mb-4 text-center lg:text-left">
+                  Completá tus datos
+                </h2>
+                <p className="font-['Inter_Tight'] font-normal text-[22px] leading-[144%] text-white">
+                  Sumate hoy al Círculo Politeama y sé parte de nuestra cocina creativa.
+                </p>
+              </div>
+              
+              {/* Lado derecho - Formulario */}
+              <div className="lg:w-1/2">
+                <form className="flex flex-col gap-4">
+                  <input
+                    type="text"
+                    placeholder="Nombre y apellido"
+                    className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 font-['Inter_Tight'] focus:outline-none focus:ring-2 focus:ring-red-500"
+                  />
+                  <input
+                    type="tel"
+                    placeholder="Teléfono"
+                    className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 font-['Inter_Tight'] focus:outline-none focus:ring-2 focus:ring-red-500"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Correo electrónico"
+                    className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 font-['Inter_Tight'] focus:outline-none focus:ring-2 focus:ring-red-500"
+                  />
+                  <button
+                    type="submit"
+                    className="w-full px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-['Inter_Tight'] font-semibold rounded-lg transition-colors duration-200 mt-2"
+                  >
+                    Enviar
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

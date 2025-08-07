@@ -3,7 +3,7 @@ import React from "react";
 export default function MembresiaPlanes() {
   return (
     <section className="w-full py-12 flex flex-col items-center bg-gradient-to-br from-black via-black to-[#A82817]">
-      <div className="max-w-7xl w-full mx-auto flex flex-col lg:flex-row gap-8 lg:gap-12 items-start pb-12 md:pb-20 pt-12 md:pt-20">
+      <div className="max-w-7xl w-full mx-auto flex flex-col lg:flex-row gap-8 lg:gap-12 items-start pb-12 md:pb-32 pt-12 md:pt-32">
         {/* Texto lateral */}
         <div className="w-full lg:w-auto lg:max-w-[400px]">
           <h2 className="font-['Inter_Tight'] font-bold text-[48px] leading-[126%] text-white mb-6" id="membresias">
@@ -15,13 +15,13 @@ export default function MembresiaPlanes() {
         </div>
 
         <div className="w-full lg:flex-1">
-          <div className="rounded-2xl shadow-lg p-6 md:p-8 flex flex-col border border-neutral-200" style={{background: 'linear-gradient(164.76deg, #FFFFFF 1.42%, #D9D9D9 99.61%)'}}>
-            <h3 className="font-['Inter_Tight'] font-bold text-[32px] leading-[106%] mb-6 text-[#171717] text-center">
+          <div className="rounded-2xl shadow-lg p-6 md:p-8 flex flex-col border border-neutral-200" style={{background: 'linear-gradient(164.76deg, #FFE9E9 1.42%, #D4D4D4 99.61%)'}}>
+            <h3 className="font-['Inter_Tight'] font-bold text-[32px] leading-[106%] mb-6 text-[#171717] text-left">
               Membresía Full Politeama
             </h3>
             
             {/* Lista de características en dos columnas */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex flex-col">
                 {[
                   "Todas las fechas desde butaca Platea",
@@ -58,60 +58,9 @@ export default function MembresiaPlanes() {
                 ))}
               </div>
             </div>
-
-            {/* Sección de precios y formulario */}
-            <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
-            {/* Precios */}
-            <div className="text-center lg:flex-1 bg-[#EBEBEB] rounded-lg p-6 flex flex-col justify-center">
-              <div className="mb-2">
-                <span className="font-['Inter_Tight'] font-bold text-3xl md:text-[42px] leading-[128%] text-[#171717]">
-                  $2.000.000
-                </span>
-              </div>
-              <div className="mb-2">
-                <span className="font-['Inter_Tight'] font-normal text-lg leading-[128%] text-[#171717]">
-                  ó 12 cuotas de $200.000
-                </span>
-              </div>
-              <div className="mb-2">
-                <span className="font-['Inter_Tight'] font-normal text-sm leading-[110%] text-[#171717]">
-                  Valor estimado real Más de $3.200.000
-                </span>
-              </div>
-              <div>
-                <span className="font-['Inter_Tight'] font-normal text-sm leading-[110%] text-[#1DB954]">
-                  Ahorro: +$1.200.000
-                </span>
-              </div>
-            </div>
-
-            {/* Formulario y botón */}
-            <div className="lg:flex-1">
-              <div className="space-y-4 mb-6">
-                <input 
-                  type="text" 
-                  placeholder="Tu nombre y apellido" 
-                  className="w-full px-4 py-3 rounded-lg border border-neutral-300 text-[#171717] placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-[#A82817] focus:border-transparent"
-                />
-                <input 
-                  type="email" 
-                  placeholder="Tu correo electrónico" 
-                  className="w-full px-4 py-3 rounded-lg border border-neutral-300 text-[#171717] placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-[#A82817] focus:border-transparent"
-                />
-              </div>
-
-              {/* Botón */}
-              <button 
-                className="w-full py-3 rounded-lg text-white font-['Inter_Tight'] font-bold text-base md:text-lg transition-transform hover:scale-[1.02] active:scale-[0.98]"
-                style={{background:'linear-gradient(90deg, #A82817 0%, #F9614D 100%)'}}
-              >
-                Contratar membresía
-              </button>
-            </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 } 
