@@ -5,8 +5,7 @@ export default function MembresiaHero() {
     <section
       className="min-h-[90vh] w-full flex items-center justify-center px-4 py-12 md:py-16 relative"
       style={{
-        background: `url('/images/background1.png') center/cover, radial-gradient(99.87% 292.01% at 0.69% 0%, #F9614D 0%, #FD3422 19.5%, #F9614D 37.5%, #D74B39 62.5%, #F9614D 79%, #F9614D 100%)`,
-        backgroundBlendMode: 'overlay'
+        background: `url('/images/background-campanella-footer.png') center/cover`
       }}
     >
       <div className="flex flex-col items-center justify-center w-full max-w-4xl mx-auto">
